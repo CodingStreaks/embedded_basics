@@ -15,6 +15,18 @@ This is a low cost atmega328p board which has support for all basic peripherals 
 This is a low cost make of original arduino board. So, the schematic might not match with Arduino. The schematic will be added in the Schematic section.
 ## Schematics
 ## Basics of cpu and its operation
+A typical structure of a CPU is shown in the below image. A CPU consit of it's own registers, control unit, arithmetic unit and BUS interconnect.
+![CPU](images/cpu_basic.svg)
+<a href="http://jgraph.github.io/drawio-github/edit-diagram.html?repo=embedded_basics&path=images/cpu_basic.svg" target="_blank">Edit</a>
+Lets understand the functionality of each components in a CPU
+### Registers
+These are memories that holds data for processing, intructions, decoded informations, status etc. These are placed very tightly inside the CPU so that the latency will be very small. That makes these memories as the fastest. The register data width can vary from device to device but typically it will be power of 2 (because of binary representation) from 8-bit to 64-bit.
+Registers are group of flip-flops and gates. Each flip-flop will hold 1 bit of data.
+![Flip-Flop](images/flip_flop.svg)
+### Control unit
+Control unit generate the signals for the operation of the CPU. The signals are indication to execute a memory read, memory write, decode instruction, select the type of arithmetic operation to carry out, updating the status register etc.
+### Arithmetic and logic unit
+A typical CPU will operation some arithmetic or logical operation in the data. There are dedicated circuitaries present in CPU to do addition, subtraction, multiplication, division, logical operations such as AND, OR, XOR, NOT etc. Each of these units will be selected based on the control signals.
 ## Memory
 ## Registers
 ## Mapping the memory and registers to a software
