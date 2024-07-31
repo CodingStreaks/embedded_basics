@@ -16,7 +16,7 @@ This is a low cost make of original arduino board. So, the schematic might not m
 ## Schematics
 ## Basics of cpu and its operation
 A typical structure of a CPU is shown in the below image. A CPU consit of it's own registers, control unit, arithmetic unit and BUS interconnect.
-![CPU](images/cpu_basic.svg)
+![CPU](images/cpu_block.svg)
 <a href="http://jgraph.github.io/drawio-github/edit-diagram.html?repo=embedded_basics&path=images/cpu_basic.svg" target="_blank">Edit</a>
 Lets understand the functionality of each components in a CPU
 ### Registers
